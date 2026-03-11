@@ -1,0 +1,226 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.workspace {
+  display: flex;
+  height: 100vh;
+  background: #1e1e1e;
+}
+
+.sidebar {
+  width: 220px;
+  background: #252526;
+  padding: 10px;
+  color: white;
+}
+
+.file {
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.file:hover {
+  background: #333;
+}
+
+.file.active {
+  background: #007acc;
+}
+
+.editor-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  background: #333;
+  padding: 10px;
+  color: white;
+}
+
+.controls select,
+.controls button {
+  margin-left: 5px;
+  padding: 5px;
+}
+
+.tab {
+  font-weight: bold;
+}
+
+.statusbar {
+  background: #007acc;
+  color: white;
+  padding: 5px;
+  text-align: right;
+}
+.join-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1e1e1e;
+}
+
+.join-box {
+  background: #9a3e55;
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.join-box input {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 250px;
+}
+
+.join-box button {
+  position: relative;
+  overflow: hidden;
+  margin-top: 10px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(45deg,#CBA135,#E6C76B,#B8962E);
+  color: #802c2c;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.join-box button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255,255,255,0.4);
+  transform: skewX(-20deg);
+}
+
+.join-box button:hover::before {
+  animation: shine 0.8s forwards;
+}
+
+@keyframes shine {
+  100% {
+    left: 130%;
+  }
+}
+body::after {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at 20% 30%,rgba(142, 44, 31, 0.15) 0%, transparent 20%),
+    radial-gradient(circle at 80% 60%, rgba(181, 56, 34, 0.15) 0%, transparent 20%),
+    radial-gradient(circle at 50% 80%, rgba(212,175,55,0.15) 0%, transparent 20%);
+  animation: floatLights 12s infinite linear;
+  pointer-events: none;
+}
+
+@keyframes floatLights {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-30px); }
+  100% { transform: translateY(0px); }
+}
+/* ================= GOLDEN LOGIN THEME ================= */
+
+.join-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('/bg.jpg') no-repeat center center/cover;
+}
+
+.join-box {
+  background: rgba(0,0,0,0.6);
+  padding: 50px 60px;
+  border-radius: 14px;
+  text-align: center;
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(212,175,55,0.4);
+  box-shadow: 0 0 40px rgba(212,175,55,0.25);
+}
+
+.join-box h2 {
+  color: #D4AF37;
+  font-family: 'Times New Roman', serif;
+  letter-spacing: 2px;
+}
+
+.join-box input {
+  display: block;
+  margin: 14px 0;
+  padding: 12px;
+  width: 280px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(212,175,55,0.4);
+  border-radius: 6px;
+  color: #fff;
+  outline: none;
+}
+
+.join-box input::placeholder {
+  color: rgba(255,255,255,0.6);
+}
+
+.join-box button {
+  margin-top: 10px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(45deg,#CBA135,#E6C76B,#B8962E);
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.join-box button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #D4AF37;
+}
+.join-box {
+  transition: 0.4s ease;
+}
+
+.join-box:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 0 20px rgba(212,175,55,0.4),
+    0 0 60px rgba(212,175,55,0.2),
+    inset 0 0 20px rgba(212,175,55,0.1);
+}
+input::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+.login-input::placeholder {
+  color: #ffffff !important;
+  opacity: 1;
+}
+
+.login-input::-webkit-input-placeholder {
+  color: #ffffff !important;
+}
+
+.login-input:-ms-input-placeholder {
+  color: #ffffff !important;
+}
+
+.login-input::-ms-input-placeholder {
+  color: #ffffff !important;
+}
