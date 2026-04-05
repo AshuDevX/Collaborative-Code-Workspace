@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![CodeCollab Banner](https://img.shields.io/badge/CodeCollab-Real--time%20Collaborative%20IDE-7c3aed?style=for-the-badge&logo=visualstudiocode)
+![CodeCollab Banner](https://img.shields.io/badge/Real--time%20Collaborative%20IDE-7c3aed?style=for-the-badge&logo=visualstudiocode)
 
 [![Node.js](https://img.shields.io/badge/Node.js-20+-339933?style=flat-square&logo=node.js)](https://nodejs.org)
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react)](https://reactjs.org)
