@@ -1,4 +1,4 @@
-# 🚀 CodeCollab — Real-time Collaborative IDE
+# 🚀 Collaborative-Code-Workspace
 
 <div align="center">
 
