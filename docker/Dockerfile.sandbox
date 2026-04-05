@@ -1,0 +1,28 @@
+# This image is used for sandboxed code execution
+# Pre-pull common language images to speed up first run:
+# docker pull node:20-alpine
+# docker pull python:3.11-alpine
+# docker pull golang:1.21-alpine
+# docker pull ruby:3.2-alpine
+# docker pull php:8.2-cli-alpine
+
+# For Java/C/C++/Rust/Kotlin/Swift, Docker will pull on first use.
+# To pre-pull everything:
+#   docker pull openjdk:17-alpine
+#   docker pull gcc:latest
+#   docker pull rust:alpine
+#   docker pull zenika/kotlin:latest
+#   docker pull swift:5.9-focal
+
+# Security notes for execution containers:
+# --network=none      : No network access
+# --memory=128m       : Memory cap
+# --cpus=0.5          : CPU cap
+# --pids-limit=64     : Process limit
+# --read-only         : Read-only filesystem
+# --tmpfs=/tmp        : Writable temp only
+# --security-opt=no-new-privileges : No privilege escalation
+# timeout 12          : Hard 12-second timeout inside container
+
+FROM alpine:latest
+RUN echo "Execution sandbox base image"
